@@ -1,0 +1,185 @@
+:root {
+  --label-color:white;
+  --error-color:rgb(253, 0, 0);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header, main, footer {
+  border: 0.1px solid black;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 15vh 70vh 15vh;
+  grid-template-columns: 90vw;
+  grid-template-areas: "header" "main" "footer";
+  background-color: rgb(84, 158, 255);
+}
+body header {
+  grid-area: header;
+}
+body main {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .main_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+body main .main_container #leftContiner {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .main_container #leftContiner form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 90%;
+  gap: 10px;
+}
+body main .main_container #leftContiner form input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  text-indent: 20px;
+  border-radius: 10px;
+}
+body main .main_container #leftContiner form label {
+  text-align: left;
+  width: 100%;
+  color: var(--label-color);
+  font-weight: 700;
+}
+body main .main_container #leftContiner form .error {
+  width: 100%;
+  text-align: left;
+  color: var(--error-color);
+}
+body main .main_container #leftContiner form input[type=submit] {
+  background: blue;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+body main .main_container #rightContainer {
+  width: 55%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 205px;
+  align-items: center;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
+}
+body main .main_container #rightContainer .card_elem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  flex-direction: column;
+  scroll-snap-align: center;
+  width: 90%;
+  min-height: 700px;
+  background-color: rgb(255, 240, 229);
+}
+body main .main_container #rightContainer .card_elem div {
+  text-align: center;
+  width: 100%;
+}
+body main .main_container #rightContainer .card_elem div img {
+  height: 95%;
+}
+body main .main_container #rightContainer .card_elem .card_name, body main .main_container #rightContainer .card_elem .card_phone, body main .main_container #rightContainer .card_elem .card_email, body main .main_container #rightContainer .card_elem .card_date {
+  height: 20px;
+}
+body main .main_container #rightContainer .card_elem .card_img {
+  height: 150px;
+}
+body main .main_container #rightContainer .card_elem .card_img img {
+  height: 100%;
+}
+body footer {
+  grid-area: footer;
+}
+
+input:invalid {
+  border: 2px solid var(--error-color) !important;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 100%;
+  align-items: center;
+}
+
+.img_left {
+  width: 300px;
+}
+
+#previewContainer {
+  height: 100px;
+  width: 100px;
+}
+#previewContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+input[id="#imageUpload"] {
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+.t {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100px;
+  background-color: green;
+  color: white;
+}
+
+#addTheme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hobbyes {
+  width: 100%;
+  min-height: 50px;
+}/*# sourceMappingURL=index.css.map */

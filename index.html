@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="main_container">
+            <div id="leftContiner">
+                <form  id="formData">
+
+                
+                    <label for="nameId">
+    Name
+                    </label>
+                    <input required name="nameId" type="text" id="nameId" placeholder="Enter your name: ">
+                    <p class="error" id="nameError"></p>
+                    <label for="telId">
+    Phone
+                    </label>
+                    <input required name="telId" type="tel" id="telId" placeholder="+375(29)777-77-77">
+    
+                    <p class="error" id="telError"></p>
+                    <label for="timeId">
+    Date
+                    </label>
+                    <input required name="timeId" id="timeId" type="date">
+                    <p class="error" id="timeError"></p>
+                    <label for="emeilId">
+    Email
+                    </label>
+                    <input required name="emeilId" id="emeilId" type="email" placeholder="Enter your mail">
+                    <p class="error" id="emailError"></p>
+                    <div class="img">
+                        <div class="img_left">
+                            <input type="file" id="imageUpload" accept="image/*">
+                            <p class="error" id="errorImg"></p>  
+                        </div>
+                        
+                        <div class="preview-container" id="previewContainer"></div>
+                    </div>              
+                    
+                    <input type="submit" value="Отправить">
+    
+                </form>
+            </div>
+            <div id="rightContainer">
+             <div>
+<div id="addTheme">
+
+    <div >
+        <div>
+            <h3 contenteditable="" class="block_header"> block_header</h3>
+        </div>
+        
+     
+            <div class="hobby">
+                <h4 contenteditable="" class="field_title">field title</h4>
+                <p contenteditable="">Content</p>
+            </div>
+        
+        
+       </div>
+</div>
+                
+                   <button id="add_theme">Add</button>
+             </div>
+             
+            </div>
+           
+        </div>
+    </main>
+    <footer></footer>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
